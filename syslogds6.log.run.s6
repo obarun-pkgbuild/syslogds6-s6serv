@@ -1,0 +1,9 @@
+#!/usr/local/bin/execlineb -P
+s6-setuidgid s6log
+s6-envdir -f env
+importas -Cs LOGSCRIPT LOGSCRIPT
+exec -c
+s6-log n3 $LOGSCRIPT
+
+# Change env/LOGSCRIPT to alter s6-log's behaviour
+

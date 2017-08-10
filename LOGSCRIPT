@@ -1,0 +1,6 @@
+- +^[0-9]+:\s[0-9]+:\serror\. t /var/log/s6serv/syslogds6/error
+- +^[0-9]+:\s[0-9]+:\sauthpriv\. t /var/log/s6serv/syslogds6/auth
+- +^[0-9]+:\s[0-9]+:\suser\. t /var/log/s6serv/syslogds6/user
+- +^[0-9]+:\s[0-9]+:\smessages\. t /var/log/s6serv/syslogds6/messages
+- +^[0-9]+:\s[0-9]+:\sdaemon\. t /var/log/s6serv/syslogds6/daemon
+f t /var/log/s6serv/syslogds6/misc
