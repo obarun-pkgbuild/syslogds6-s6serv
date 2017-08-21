@@ -2,7 +2,7 @@
 
 pkgname=syslogds6-s6serv
 pkgver=0.2
-pkgrel=2
+pkgrel=3
 pkgdesc="syslogds6 service for s6"
 arch=(x86_64)
 license=('beerware')
@@ -30,7 +30,7 @@ package() {
 	# log
 	install -Dm 0755 "$srcdir/syslogds6.log.run.s6" "$pkgdir/etc/s6-serv/available/classic/syslogds6/log/run"
 	install -Dm 0755 "$srcdir/LOGSCRIPT" "$pkgdir/etc/s6-serv/available/classic/syslogds6/log/env/LOGSCRIPT"
-	install -Dm 0644 "$srcdir/syslogds6.logd" "$pkgdir/etc/s6-serv/log.d/serv/syslogds6"
+	install -Dm 0644 "$srcdir/syslogds6.logd" "$pkgdir/etc/s6-serv/log.d/syslogds6"
 	
 	install -Dm 0755 "$srcdir/LICENSE" "$pkgdir/usr/share/licenses/syslogds6-s6serv/LICENSE"
 }
